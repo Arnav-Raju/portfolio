@@ -1,0 +1,22 @@
+{
+  "entities": {
+    "GuestbookMessage": {
+      "title": "GuestbookMessage",
+      "description": "A public message on the guestbook.",
+      "type": "object",
+      "properties": {
+        "text": { "type": "string", "maxLength": 500 },
+        "authorName": { "type": "string", "maxLength": 100 },
+        "authorId": { "type": "string", "maxLength": 128 },
+        "createdAt": { "type": "timestamp" }
+      },
+      "required": ["text", "authorName", "authorId", "createdAt"]
+    }
+  },
+  "firestore": {
+    "guestbook/{messageId}": {
+      "schema": "GuestbookMessage",
+      "description": "Stores all guestbook entries."
+    }
+  }
+}

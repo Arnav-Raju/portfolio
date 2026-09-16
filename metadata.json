@@ -1,0 +1,7 @@
+{
+  "name": "Arnav Raju Penumetcha - Portfolio",
+  "description": "A premium, futuristic portfolio website showcasing software engineering and AI/ML projects with an integrated Gemini-powered AI assistant.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
